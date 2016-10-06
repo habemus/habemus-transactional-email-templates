@@ -6,7 +6,7 @@ const gulp      = require('gulp');
 const rimraf    = require('rimraf');
 const inlineCss = require('gulp-inline-css');
 
-gulp.task('build', function () {
+gulp.task('distribute', function () {
 
   rimraf.sync(path.join(__dirname, 'dist'));
 
@@ -23,4 +23,4 @@ gulp.task('build', function () {
 
 });
 
-gulp.task('default', ['build']);
+gulp.task('default', ['distribute']);
