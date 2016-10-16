@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Password reset</title>
+<title>Your domain {{ domain }} was successfully connected</title>
 <link href="../common-styles.css" media="all" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
@@ -59,27 +59,23 @@
     <td></td>
     <td class="container" width="600">
       <div class="content">
-        <table class="main" width="100%" cellpadding="0" cellspacing="0" itemprop="action" itemscope itemtype="http://schema.org/ConfirmAction">
+        <table class="main" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="alert alert-good">
+              Your domain <strong>{{ domain }}</strong> was successfully connected.
+            </td>
+          </tr>
           <tr>
             <td class="content-wrap">
-              <meta itemprop="name" content="Confirm Email"/>
               <table width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td class="content-block">
-                    You've requested a password reset for the Habemus account {{ email }}
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
-                    <a
-                      href="{{ url }}"
-                      class="btn-primary"
-                      itemprop="url">Reset your password</a>
+                    To see it live, just click the button :)
                   </td>
                 </tr>
                 <tr>
                   <td class="content-block">
-                    &mdash; The Mailgunners
+                    <a href="http://{{ domain }}" class="btn-primary">Go to {{ domain }}</a>
                   </td>
                 </tr>
               </table>
@@ -89,10 +85,13 @@
         <div class="footer">
           <table width="100%">
             <tr>
-              <td class="aligncenter content-block">Follow <a href="http://twitter.com/mail_gun">@Mail_Gun</a> on Twitter.</td>
+              <td class="aligncenter content-block">
+                <a href="https://habem.us">Habemus</a>
+              </td>
             </tr>
           </table>
-        </div></div>
+        </div>
+      </div>
     </td>
     <td></td>
   </tr>
