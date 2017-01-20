@@ -168,6 +168,12 @@ a {
   text-transform: lowercase;
 }
 
+.btn-primary:hover {
+  background-color: #3eeeb7;
+  border: solid #3eeeb7;
+  border-width: 10px 20px;
+}
+
 /* -------------------------------------
     OTHER STYLES THAT MIGHT BE USEFUL
 ------------------------------------- */
