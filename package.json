@@ -1,8 +1,12 @@
 {
-  "name": "habemus-emails",
-  "version": "0.0.0",
+  "name": "habemus-transactional-email-templates",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/habemus/habemus-transactional-email-templates"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
